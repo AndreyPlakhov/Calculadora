@@ -1,6 +1,6 @@
 package calculadora;
 
-import static java.lang.Math.sqrt;
+import static java.lang.Math.*;
 
 public class Model {
     
@@ -17,6 +17,8 @@ public class Model {
             return (number1 / number2);
         case "√":
             return sqrt(number1);
+        case "^":  
+            return Math.pow(number1, number2);
         }
         
         System.out.println("Operador desconhecido: " + operator);
